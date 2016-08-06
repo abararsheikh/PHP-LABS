@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="621d7de9-163b-474f-9927-b0f293b282c9" name="index" url="http://localhost/phptest/">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\phptest" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

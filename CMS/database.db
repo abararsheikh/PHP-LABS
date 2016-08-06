@@ -1,0 +1,13 @@
+<?php
+ini_set('display_error','on');
+
+try
+{
+    $db = new PDO('sqlite:./database.php');
+    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+}
+catch(Exception $e)
+{
+    echo $e->getMessage();
+    die();
+}

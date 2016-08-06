@@ -1,0 +1,3 @@
+<?php
+
+$v = new Validateform();

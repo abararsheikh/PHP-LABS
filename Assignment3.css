@@ -1,0 +1,758 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+
+html
+{
+	box-sizing: border-box;
+	font-size: 100%;
+}
+*,*:before,*:after
+{
+	box-sizing: inherit;
+}
+.page-wrapper
+{
+	position: relative;
+	max-width: 980px;
+	margin: 0 auto;
+}
+.hidden
+{
+	position: absolute;
+	left: -10000px;
+}
+.radio{
+    
+    color:#895fa9;
+    font-size:20px;
+}
+body
+{
+	margin: 0;
+	font: normal 1em/1.25 Arial, Helvetica, sans-serif;
+}
+a,a:link
+{
+	color: #9999CC;
+	text-decoration: none;
+}
+#header
+{
+	background-color: #3b576d;
+	display: inline-block;
+	width: 100%;
+	padding: 2.2em;
+}
+#main-menu
+{
+	text-align: center;
+	position: absolute;
+	padding-left:290px;
+	text-transform: uppercase;
+/*	top:-50px;*/
+	top:-35px;
+	
+	
+			
+}
+#main-menu a:hover
+{
+	color: #a8c3f2;
+}
+#main-menu ul
+{
+	list-style: none;
+	padding: 0;
+	
+}
+#main-menu li
+{
+	display: inline-block;
+	font-size: 1.25em;
+	padding: 15px 10px;
+}
+.myName
+{
+	text-align: center;
+	color: peru;
+	padding-top: 30px;
+	font-family: 'Satisfy', cursive;
+	font-size: 1.2em;
+	
+}
+
+.button
+{
+	text-align: center;
+/*	margin-top: -210px;*/
+	padding-bottom: 0;
+	padding-top: 87px; 
+	
+	 
+	
+	/* padding-top: 180px;
+	padding-bottom: 5px;  */
+	
+		
+}
+
+
+
+#banner
+{
+	background-color: #d6dcde;
+	overflow-x: hidden;
+}
+.codingDesktop
+{
+	margin-top: -250px; 
+	padding-left: 135px;
+	font-family: monospace;
+	font-size: 20px;
+	
+	
+	
+}
+.line1,.line2
+{
+	color:#3a7dda;
+}
+.line3
+{
+	color: #40dac5;
+}
+.line4
+{
+	color: #ffbc3e;
+	
+}
+.line4 > p
+{
+	color: #7dba1a;
+}
+
+
+div.line1
+{
+	
+	-webkit-animation: mymove 6s infinite;  /* Chrome, Safari, Opera */
+   -webkit-animation-timing-function: linear;  /* Chrome, Safari, Opera */ 
+	position: relative;
+	
+}
+
+ @-webkit-keyframes mymove {
+    from {left: 10px;}
+    to {left: 90px;}
+}
+
+@keyframes mymove {
+    from {left: 10px;}
+    to {left: 210px;}
+}
+
+
+
+div.line2
+{
+	-webkit-animation:mymove 6s infinite;
+	-webkit-animation-timing-function:linear;
+	position: relative;
+	
+}
+div.line3
+{
+	-webkit-animation:mymove 6s infinite;
+	-webkit-animation-timing-function:linear;
+	position: relative;
+	
+}
+	
+div.line4
+{
+	 -webkit-animation:mymove 6s infinite;
+	-webkit-animation-timing-function:linear;
+	position: relative;
+	
+}
+
+
+
+#mainpart
+{
+	
+	padding: 22px;
+	background-color: #d6dcde;
+}
+#footer
+{
+	clear: both;
+	background-color: #323232;
+	margin: 0;
+	text-align: center;
+	color: #9999CC;
+	top: 0;
+	
+}
+
+#footer > .page-wrapper {
+  padding: 35px 0;
+}
+
+#desktopmain
+{
+	
+/*	margin-top: 10px;*/
+	padding: 20px;
+	background-color: #2f3744;
+}
+
+/* ------------------------------------- */
+
+/*contact form */
+
+#contact
+{
+	text-align: center;
+	padding:5px;
+}
+
+
+
+.form label, input, textarea {
+	font-family: 'Lato', sans-serif !important;
+	font-size:16px;
+	margin: 10px 0;
+	background:#d4d4d4;
+	border:none;
+	width:100%;
+	/*box-sizing:border-box;
+	-moz-box-sizing:border-box; */
+	color: #585b4d;
+	padding: 8px;
+	border-top: 4px solid #99c165;
+	border-bottom: 4px solid #99c165;
+	transition: all 1s;
+   
+}
+
+textarea:hover
+{
+	transform: scaleY(1.2);
+}
+.form textarea{
+	height:150px;
+	/*resize:none !important;*/
+	margin-bottom:20px;
+	overflow: hidden;
+}
+
+.submit{
+	position: relative;
+	height: 70px;
+	text-align: center;
+	margin-top: 20px;
+	-webkit-transition: all 1s;
+}
+
+.submit:hover
+{
+	transform: scale(1.1);
+}
+#submitbutton
+{
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	background-color: #bb9568;
+	border: 3px solid #636363;
+	text-transform: uppercase;
+	font: bold 0.875em "Century Gothic", Futura, AppleGothic, sans-serif;
+}
+
+
+
+
+img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+/*-----------Respnsive Design ------980px---------*/
+
+@media all and (max-width:980px)
+{
+	
+ 	body
+	{
+	font-size: 0.9em;
+	}
+	#main-menu
+	{
+		position: relative;
+		padding-left:0px;
+		
+						
+	}
+/*
+	#main-menu li
+	{
+    	
+		padding: 15px 10px;
+					
+    }
+*/
+	
+    .myName
+	{
+		padding-top: 0;
+		margin-top: -40px;
+	}
+   .codingDesktop
+	{
+		/*margin-top: -250px;
+		font-size: 1.5em;  */
+	
+/*		padding-top: 15px;*/
+	}
+	.button
+	{
+		padding-top: 87px;
+	}
+
+
+	/*---- about page------ */
+	
+	#main
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+		max-width:100%;
+	    width: 100%;
+	}
+	
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6
+	{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	padding-top: 40px;
+	}
+	.about
+	{
+	max-width: 410px;
+	}
+	.skills
+	{
+	  max-width: 440px;
+		padding-top: 35px;
+	}
+	
+	
+	/*---- work page------ */
+	
+	.Desktopimg, .Tabletimg, .Phoneimg 
+	{
+		
+		padding: 30px;
+	}
+	
+	.img1,.img2,.img3
+	{
+		width: 190px;
+		height: auto;
+		
+		
+	}
+	.img3
+	{
+		height:150px; 
+		
+	}
+	
+}
+	
+	/*-----------Respnsive Design ------768px---------*/
+	
+@media all and (max-width:768px) 
+{
+		
+	body
+	{
+    font-size: 0.9em;
+    }
+  
+	#main-menu
+	{
+		position: relative;
+		padding-left:0px;
+		
+		max-width:100%;
+	    width: 100%;
+		
+	}
+	.myName
+	{
+		margin-top: -40px;
+	}
+	
+	.codingDesktop
+	{
+		padding-top: 50px;
+		font-size: 1.2em;
+	}
+	.button
+	{
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	
+	@keyframes mymove 
+	{
+    from {left: 0px;}
+    to {left: 125px;}
+	}
+	
+	@-webkit-keyframes mymove 
+	{
+    from {left: 0px;}
+    to {left: 125px;}
+    }
+
+	/*---------work page ------------*/
+	
+	.Desktopimg, .Tabletimg, .Phoneimg 
+	{
+		
+		padding: 20px;
+	}
+	.img1,.img2,.img3
+	{
+		width: 180px;
+		height: auto;
+		
+	}
+	.img3
+	{
+		height: 145px;
+	}
+	.projects
+	{
+		font-size: 0.9em;
+		margin-left: 15px;
+		padding-bottom: 35px;
+	}
+	
+	
+	/*---------About page ------------*/
+	
+	
+    
+	
+	.circle1, .circle2, .circle3, .circle4, .circle5, .circle6
+	{
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	padding-top: 30px;
+	}
+	.about
+	{
+	max-width: 350px;
+	}
+	.skills
+	{
+	  max-width: 380px;
+	  padding-top: 5px;
+	}
+	
+
+}
+
+
+
+/*----------640 px-----------*/
+@media all and (max-width:640px) 
+{
+	
+	#main-menu 
+	{
+		padding-left: 0;		
+
+					
+	}
+	#main-menu li
+	{
+		font-size: 0.8em;
+		display: inline;
+		
+	}
+	
+	.codingDesktop
+	{
+		font-size: 1.1em;
+		padding-top: 85px;
+		
+	}
+	.button
+	{
+		
+		padding-bottom: 10px;;
+		padding-top: 80px;
+	}
+	
+	@keyframes mymove 
+	{
+    from {left: -25px;}
+    to {left: 80px;}
+	}
+	
+	@-webkit-keyframes mymove 
+	{
+    from {left:-25px;}
+    to {left: 80px;}
+    }
+	
+	
+	/*---- about page------ */
+	
+	.about
+	{
+		max-width: 480px;
+		padding-left: 65px;
+		
+	}
+	.skills
+	{
+	  
+		max-width: 480px;
+		margin-top: 10px;
+		float: none;
+		padding-left: 65px;
+		padding-bottom: 25px;
+	}
+	
+	.circle1, .circle2, .circle3, .circle4, .circle5,   		.circle6
+	{
+	width: 90px;
+	height: 90px;
+	text-align: center;
+	padding-top: 35px;
+	}
+	
+}
+
+
+
+/*----------480 px-----------*/
+@media all and (max-width:480px) 
+{
+	.myName
+	{
+		font-size: 1.0em;
+		padding-top: 2px;
+	}
+	.codingDesktop
+	{
+		padding-top: 120px;
+	}
+	.button
+	{
+		padding-top: 45px;
+		padding-bottom: 70px;
+		
+		
+	}
+	
+	@keyframes mymove 
+	{
+    from {left: -70px;}
+    to {left: 10px;}
+	}
+	
+	@-webkit-keyframes mymove 
+	{
+    from {left:-70px;}
+    to {left: 10px;}
+    }
+	
+	
+	/*---------work page ------------*/
+	.img3
+	{
+		width: 185px;
+	}
+	
+	
+	/*---- about page------ */
+	
+	.about
+	{
+	   padding-left: 10px;
+		
+	}
+	.skills
+	{
+		padding-left: 10px;
+
+	}
+	
+}
+
+.menu-toggle
+{
+  display: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+
+/*----------370 px-----------*/
+
+@media all and (max-width:370px)
+{
+	.codingDesktop
+	{
+		padding-top: 145px;
+		font-size: 0.9em;
+	}
+	.button
+	{
+		padding-top: 20px;
+	}
+	.circle1, .circle2, .circle3, .circle4, .circle5,   		.circle6
+	{
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	padding-top: 27px;
+	}
+}
+
+
+/*----------320 px-----------*/
+
+@media all and (max-width:320px) 
+{
+	.hidden-small
+	{
+       left: -10000px;
+    }
+    .show-small
+	{
+    left: 0;
+    }
+	.menu-toggle 
+	{
+    position: relative;
+    display: block;
+	float: right;
+	margin-left: 3%;
+	color: #fff;
+	z-index: 100; /* make sure toggle is on top */
+/*		margin-top: 10px;*/
+		top:-20px;
+		
+  }
+	
+	#footer .menu-toggle {
+    text-align: center;
+	float: none; /* so it doesn't float right */
+	padding: 1em 0;
+	
+  }
+	#main-menu
+	{
+		position: absolute;
+/*		padding-top: 50px;*/
+		padding-top: 40px;
+		margin-top: 10px;
+		margin-bottom: -30px;
+	}
+  #main-menu li {
+    display: block;
+	width: 100%;
+	border-top: 2px dotted #e9f1bd;
+	padding: 0.8em 0;
+  }
+  #main-menu li:first-child {
+    padding-left: 0; /* remove extra padding */
+  }
+	
+	
+  #footer
+	{
+    margin-bottom: 0;
+  }
+	
+	.myName
+	{
+/*		padding-top: 50px;*/
+		margin-top: 10px;
+		padding-top: 10px;
+	}
+	.codingDesktop
+	{
+		padding-top: 160px;
+		font-size: 0.8em;
+		
+	}
+	#menuicon
+	{
+		width: 25px;
+		height: 25px;
+		
+		
+	}
+	
+	@keyframes mymove 
+	{
+    from {left: -90px;}
+    to {left: -45px;}
+	}
+	
+	@-webkit-keyframes mymove 
+	{
+    from {left:-90px;}
+    to {left: -45px;}
+    }
+	
+	/*---- about page------ */
+	
+		
+	.skills
+	{
+	  
+		max-width: 300px;
+		margin-top: 10px;
+		float: none;
+		padding-left: 65px;
+		padding-bottom: 25px;
+	}
+	
+	.circle1, .circle2, .circle3, .circle4, .circle5,   		.circle6
+	{
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	padding-top: 45px;
+	}
+	
+	.first3
+	{
+		margin-bottom: 10px;
+	}
+	#skls
+	{
+		padding-right: 15px;
+	}
+	body
+	{
+		overflow-x: hidden;
+	}
+}
+
+

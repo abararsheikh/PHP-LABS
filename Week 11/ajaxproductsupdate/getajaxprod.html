@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Select Category: <select name="category" id="category">
+
+                 </select>
+<input type="submit" id="getprod" value="Get product in the category">
+<div id="prodlist">
+
+</div>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $.getJSON('getCategory.php', function(data){
+            var cat = "";
+            $.each(data, function(index,category){
+
+                cat += '<option value="' + category.category + '">' + category.category + '</option>';
+            })
+            $('#category').html(cat); //i am putting this category to the #category div
+        });
+
+        $('#category').change(function(){
+          //  alert('aaa');
+            var cateee = $('#category').val();
+            //above user wahtever select the value in drop down that goes i m passing to the
+            //getproductincategory file's of cat
+            $.getJSON('getproductincategory.php',{cat : cateee}, function (data) {
+                var result ="<ul>";
+                $.each(data, function(index,product){
+                    result += "<li>" + product.category + " : " + product.productName + "</li>";
+                });
+                result += "</ul>";
+
+                $('#prodlist').html(result);
+            });
+        })
+        /*
+        $.getJSON('getproducts.php', function (data) {
+            var result ="<ul>";
+            $.each(data, function(index,product){
+                result += "<li>" + product.category + " : " + product.productName + "</li>";
+            });
+            result += "</ul>";
+
+            $('#prodlist').html(result);
+        });
+*/
+    });
+</script>
+</body>
+</html>
